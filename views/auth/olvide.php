@@ -4,8 +4,9 @@
 
     <div class="contenedor-sm">
     <p class="descripcion-pagina"> Recupera tu password </p>
+    <?php include_once __DIR__ . '/../templates/alertas.php';   ?>
 
-    <form action="/olvide" class="formulario" method="post">
+    <form action="/olvide" class="formulario" method="post" novalidate>
         <div class="campo">
             <label for="email">Email</label>
             <input type="email" id="email" placeholder="Tu email" name="email">
